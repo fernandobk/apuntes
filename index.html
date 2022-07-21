@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes ISES PL - FBK.ar</title>
+    <link rel="stylesheet" href="bulma.css" />
+    <style>
+        pre {
+            background-color: black;
+            color: aliceblue;
+            font-family: monospace;
+            text-align: left;
+            max-width: 700px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+        iframe {
+            height: 100vh;
+            width: 100vw;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="is-size-1 has-text-weight-bold p-5">Apntes Programación Lógica ISES</div>
+    <hr />
+    
+    <div class="has-text-centered" width="100%">
+        <div class="is-size-2 p-5">Ejercicio 5</div>
+        <iframe src="//sendvid.com/embed/fg1e8a6d" allowfullscreen></iframe>
+        <hr />
+        <strong>Código fuente:</strong>
+        <pre>
+    Algoritmo sin_titulo
+        Definir cant_personas, contador Como Entero
+        Definir gH, gM Como Entero
+        Definir ingreso_genero Como Caracter
+        
+        Mostrar "Ingese cantidad de personas:"
+        leer cant_personas
+        
+        contador <- 0
+        Mientras contador < cant_personas Hacer
+            Mostrar "Persona nro. " contador+1 " de " cant_personas
+            Mostrar "Ingrese género (H / M):"
+            Leer ingreso_genero
+            
+            Si ingreso_genero == "h" o ingreso_genero == "H" Entonces
+                gH <- gH + 1
+            FinSi
+            
+            Si ingreso_genero == "m" o ingreso_genero == "M" Entonces
+                gM <- gM + 1
+            FinSi
+            
+            contador <- contador + 1
+        FinMientras
+        
+        Mostrar "Cant. Mujeres: " gM
+        Mostrar "Cant. Hombres: " gH
+        Mostrar "Porcentaje de mujeres: " (100/cant_personas*gM) " %"
+        Mostrar "Porcentaje de hombres: " (100/cant_personas*gH) " %"
+    FinAlgoritmo
+        </pre>
+    </div>
+</body>
+</html>
