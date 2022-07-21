@@ -65,5 +65,76 @@
     FinAlgoritmo
         </pre>
     </div>
+    <hr />
+
+    <div class="has-text-centered" width="100%">
+        <div class="is-size-2 p-5">Ejercicio 6</div>
+        <iframe src="//sendvid.com/embed/3wjzly4x" allowfullscreen></iframe>
+        <hr />
+        <strong>Código fuente con <i>"Mientras"</i>:</strong>
+        <pre>
+    Algoritmo ejercicio6
+        Definir nota, promGral Como Real
+        Definir cantEstudiantes Como Entero
+        Definir cantAprob, cantReprob Como Entero
+        
+        Mostrar "Escriba la primer nota: (entre 1 y 10; 0: salir)"
+        Leer nota
+        
+        Mientras nota <> 0 Hacer
+            cantEstudiantes <- cantEstudiantes + 1
+            promGral <- promGral + nota
+            
+            Si nota < 6 Entonces
+                cantReprob <- cantReprob + 1
+            Sino
+                cantAprob <- cantAprob + 1
+            FinSi
+            
+            Mostrar "Escriba otra nota, entre 1 y 10 (0: salir)"
+            Leer nota
+        FinMientras
+        
+        promGral <- promGral / cantEstudiantes
+        
+        Mostrar "Cant. Estud. Aprobados: " cantAprob
+        Mostrar "Cant. Estud. Reprobados: " cantReprob
+        Mostrar "Prom. Gral.:" promGral
+    FinAlgoritmo	
+        </pre>
+        <hr />
+        <strong>Código fuente con <i>"Repetir"</i>:</strong>
+        <pre>
+    Algoritmo ejercicio6
+        Definir nota, promGral Como Real
+        Definir cantEstudiantes Como Entero
+        Definir cantAprob, cantReprob Como Entero
+        
+        Mostrar "Escriba la primer nota: (entre 1 y 10; 0: salir)"
+        Leer nota
+        
+        Repetir
+            cantEstudiantes <- cantEstudiantes + 1
+            promGral <- promGral + nota
+            
+            Si nota < 6 Entonces
+                cantReprob <- cantReprob + 1
+            Sino
+                cantAprob <- cantAprob + 1
+            FinSi
+            
+            Mostrar "Escriba otra nota, entre 1 y 10 (0: salir)"
+            Leer nota
+        Hasta Que nota = 0
+        
+        promGral <- promGral / cantEstudiantes
+        
+        Mostrar "Cant. Estud. Aprobados: " cantAprob
+        Mostrar "Cant. Estud. Reprobados: " cantReprob
+        Mostrar "Prom. Gral.:" promGral
+    FinAlgoritmo
+        </pre>
+        <hr />
+    </div>
 </body>
 </html>
